@@ -1,0 +1,48 @@
+body {
+    padding: 0;
+    margin: 0;
+    color: #3498db; /*文字颜色*/
+    font-family: SAOUI, sans-serif;
+    font-size: 1.5rem; /*文字大小，可以使用 26px 这种格式*/
+	overflow: hidden;
+}
+
+@font-face {
+    font-family: SAOUI;
+    src: url('SAOUI.ttf');
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+#canvas {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 256px;
+    height: 256px;
+}
+
+canvas {
+    position: absolute;
+}
+
+.rotate {
+    animation: rotate-1 60s linear infinite;
+}
+
+@keyframes rotate-1 {
+    0%,
+    100% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
